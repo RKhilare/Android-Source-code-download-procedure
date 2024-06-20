@@ -1,0 +1,43 @@
+1) set up packages
+  sudo apt-get install git-core gnupg flex bison build-essential zip curl zlib1g-dev libc6-dev-i386 x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig
+  sudo apt update
+  sudo apt upgarde
+
+2)Download Source code
+   1> create one directory and move towords that directory
+      mkdir "directory name"
+      cd "directory name"
+
+  2>conguring git credintials
+     git config --global user.name "your name"
+     git config ==global user.email "your email"
+
+  3> downloading repo tool got to home directory
+      cd ..
+      mkdir ~/bin
+      PATH=~/bin/:$PATH
+      curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+      chmod a+x ~/bin/repo
+
+  4> select latest version of android tag
+      android-14.0.0_r50
+
+      repo init -u https://android.googlesource.com/platform/manifest (put -b before android tag whenver latest version needed)
+
+      (repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r50)
+
+  5> navigate to created folder
+      cd "folder name"
+
+    * if any error related to python execute this command
+      sudo ln -sf /usr/bin/python3 /usr/bin/python
+
+   6> download source code
+      repo sync
+
+      
+      
+      
+
+
+
