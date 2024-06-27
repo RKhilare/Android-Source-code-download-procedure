@@ -1,0 +1,6 @@
+     ->  source build/envsetup.sh
+     
+      -> lunch
+          select the combo version
+
+      -> make -j3 2&>1 | tee android-build.log
