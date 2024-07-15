@@ -24,7 +24,7 @@
 
       repo init -u https://android.googlesource.com/platform/manifest (put -b before android tag whenver latest version needed)
 
-      (repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r50)
+      (repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r50 --depth=1)
 
   5> navigate to created folder
       cd "folder name"
