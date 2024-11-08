@@ -1,6 +1,7 @@
      ->  source build/envsetup.sh
      
       -> lunch
+          sdk_phone_x84_64_userdebug
           select the combo version
 
       -> make -j3 2&>1 | tee android-build.log
